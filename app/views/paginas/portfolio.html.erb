@@ -1,0 +1,134 @@
+<% provide(:titulo, 'Portafolio')%>
+
+<div class="container">
+
+	<ul class="nav nav-pills sort-source" data-sort-id="portfolio" data-option-key="filter">
+		<li data-option-value="*" class="active"><a href="#">Todos</a></li>
+		<li data-option-value=".cms"><a href="#">CMS</a></li>
+		<li data-option-value=".portal"><a href="#">Portal</a></li>
+		<li data-option-value=".desarrollo"><a href="#">Desarrollo</a></li>
+		<li data-option-value=".integracion"><a href="#">Integración</a></li>
+	</ul>
+
+	<hr />
+
+	<div class="row">
+
+		<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
+			<li class="span6 isotope-item cms">
+				<div class="portfolio-item thumbnail">
+					<a href="/metlife" class="thumb-info">
+						<img alt="" width="560" height="375" src=<%= asset_path 'proyectos/metlife.png'%> >
+						<span class="thumb-info-title">
+							<span class="thumb-info-inner">Metlife</span>
+							<span class="thumb-info-type">CMS</span>
+						</span>
+						<span class="thumb-info-action">
+							<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+						</span>
+					</a>
+				</div>
+			</li>
+			<li class="span6 isotope-item portal">
+				<div class="portfolio-item thumbnail">
+					<a href="/banamex" class="thumb-info">
+						<img alt="" width="560" height="375" src=<%= asset_path 'proyectos/banamex.png'%>>
+						<span class="thumb-info-title">
+							<span class="thumb-info-inner">Banamex</span>
+							<span class="thumb-info-type">Portal</span>
+						</span>
+						<span class="thumb-info-action">
+							<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+						</span>
+					</a>
+				</div>
+			</li>
+			<li class="span6 isotope-item portal">
+				<div class="portfolio-item thumbnail">
+					<a href="/prudential" class="thumb-info">
+						<img alt="" width="560" height="375" src=<%= asset_path 'proyectos/prudential.png'%>>
+						<span class="thumb-info-title">
+							<span class="thumb-info-inner">Prudential</span>
+							<span class="thumb-info-type">Portal</span>
+						</span>
+						<span class="thumb-info-action">
+							<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+						</span>
+					</a>
+				</div>
+			</li>
+			<li class="span6 isotope-item desarrollo">
+				<div class="portfolio-item thumbnail">
+					<a href="/prudential" class="thumb-info">
+						<img alt="" width="560" height="375" src=<%= asset_path 'proyectos/prudential.png'%>>
+						<span class="thumb-info-title">
+							<span class="thumb-info-inner">Prudential</span>
+							<span class="thumb-info-type">Desarrollo</span>
+						</span>
+						<span class="thumb-info-action">
+							<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+						</span>
+					</a>
+				</div>
+			</li>
+			<li class="span6 isotope-item cms">
+				<div class="portfolio-item thumbnail">
+					<a href="/mexicana" class="thumb-info">
+						<img alt="" width="560" height="375" src=<%= asset_path 'proyectos/mexicana.png'%>>
+						<span class="thumb-info-title">
+							<span class="thumb-info-inner">Mexicana</span>
+							<span class="thumb-info-type">CMS</span>
+						</span>
+						<span class="thumb-info-action">
+							<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+						</span>
+					</a>
+				</div>
+			</li>
+			<li class="span6 isotope-item integracion">
+				<div class="portfolio-item thumbnail">
+					<a href="/moctezuma" class="thumb-info">
+						<img alt="" width="560" height="375" src=<%= asset_path 'proyectos/rec_moctezuma.png'%> >
+						<span class="thumb-info-title">
+							<span class="thumb-info-inner">REC</span>
+							<span class="thumb-info-type">Integración</span>
+						</span>
+						<span class="thumb-info-action">
+							<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+						</span>
+					</a>
+				</div>
+			</li>
+			<li class="span6 isotope-item desarrollo">
+				<div class="portfolio-item thumbnail">
+					<a href="/gnp" class="thumb-info">
+						<img alt="" width="560" height="375" src=<%= asset_path 'proyectos/gnp.png'%> >
+						<span class="thumb-info-title">
+							<span class="thumb-info-inner">GNP</span>
+							<span class="thumb-info-type">Desarrollo</span>
+						</span>
+						<span class="thumb-info-action">
+							<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+						</span>
+					</a>
+				</div>
+			</li>
+			<li class="span6 isotope-item desarrollo">
+				<div class="portfolio-item thumbnail">
+					<a href="/santander" class="thumb-info">
+						<img alt="" width="560" height="375" src=<%= asset_path 'proyectos/santander.png'%> >
+						<span class="thumb-info-title">
+							<span class="thumb-info-inner">Santander</span>
+							<span class="thumb-info-type">Desarrollo</span>
+						</span>
+						<span class="thumb-info-action">
+							<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+						</span>
+					</a>
+				</div>
+			</li>
+		</ul>
+
+	</div>
+
+</div>

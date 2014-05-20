@@ -10,4 +10,48 @@
  *
  *= require_self
  *= require_tree .
+ *  Libs CSS
+ *= require bootstrap.css
+ *= require fonts/font-awesome/css/font-awesome.css
+ *= require flexslider/flexslider.css
+ *= require magnific-popup/magnific-popup.css
+ *= require isotope/jquery.isotope.css
+ *
+ * Theme CSS
+ *= require theme.css
+ *= require theme-elements.css.scss
+ *= require theme-animate.css
+ *
+ * Current Page Styles CSS
+ *= require revolution-slider/css/settings.css
+ *= require revolution-slider/css/captions.css
+ *= require circle-flip-slideshow/css/component.css
+ *
+ * Custom CSS
+ *= require custom.css
+ *
+ * Skin CSS
+ *= require skins/blue.css
+ *
+ * Responsive CSS
+ *= require bootstrap-responsive.css
+ *= require theme-responsive.css
+ * Favicons 
+ * require img/favicon.ico
+	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+ *
+ *
+ *
+ *
+ *
+ *
+ *
  */
+
+	
+
+
+	

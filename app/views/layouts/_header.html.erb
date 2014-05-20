@@ -1,0 +1,52 @@
+<header>
+	<div class="container">
+		<h1 class="logo">
+			<a href="index.html">
+				<img alt="H2Consulting" src=<%= asset_path('logo_h2c_dark_blue.png')%> >
+			</a>
+		</h1>
+		<div class="search">
+			
+		</div>
+		<nav>
+			<ul class="nav nav-pills nav-top">
+				<li>
+					<a href=<%= somos_path%>><i class="icon-angle-right"></i>Nosotros</a>
+				</li>
+				<li>
+					<a href=<%= contacto_path%>><i class="icon-angle-right"></i>Contáctanos</a>
+				</li>
+				<li class="phone">
+					<span><i class="icon-phone"></i>(55) 55.53.27.65</span>
+				</li>
+			</ul>
+		</nav>
+		<div class="social-icons">
+			<ul class="social-icons">
+				<li class="facebook"><a href="http://www.facebook.com/hrsalazar2205" target="_blank" title="Facebook">Facebook</a></li>
+				<li class="twitter"><a href="http://www.twitter.com/austrachilango" target="_blank" title="Twitter">Twitter</a></li>
+				<li class="linkedin"><a href="http://au.linkedin.com/in/hrsalazar" target="_blank" title="Linkedin">Linkedin</a></li>
+			</ul>
+		</div>
+
+		<nav>
+			<ul class="nav nav-pills nav-main" id="mainMenu">
+				<li>
+					<%= link_to "Inicio", inicio_path%>
+				</li>
+				<li>
+					<%= link_to "Servicios", servicios_path%>
+				</li>
+				<li>
+					<%= link_to "Portafolio", portafolio_path%>
+				</li>
+				<li>
+					<%= link_to "Somos", somos_path%>
+				</li>
+				<li>
+					<%= link_to "Contacto", contacto_path%>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>	

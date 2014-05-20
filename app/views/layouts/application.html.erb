@@ -1,14 +1,81 @@
 <!DOCTYPE html>
-<html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
 <head>
-  <title>H2cWebsite</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<!-- Basic -->
+	<meta charset="utf-8">
+	<title>H2Consulting</title>
+	<meta name="keywords" content="Web Services Web Consulting Development HTML CSS3 Mexico Consultoría Desarrollo Diseño" />
+	<meta name="description" content="H2Consulting Services - Responsive HTML5 Website to demonstrate our capabilities, knowledge and experience on Technology">
+	<meta name="author" content="h2c.com.mx">	
 
-<%= yield %>
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Web Fonts  -->
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+
+	<!-- Font Awesome-->
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+	<!--[if IE]>
+		<link rel="stylesheet" href="css/ie.css">
+	<![endif]-->
+
+	<!--[if lte IE 8]>
+		<script src="vendor/respond.js"></script>
+	<![endif]-->
+
+	<!-- Facebook OpenGraph Tags - Go to http://developers.facebook.com/ for more information.
+	<meta property="og:title" content="H2Consulting Responsive Website"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://www.h2c.com.mx"/>
+	<meta property="og:image" content="http://www.h2c.com.mx"/>
+	<meta property="og:site_name" content="H2Consulting"/>
+	<meta property="fb:app_id" content=""/>
+	<meta property="og:description" content="H2Consulting Responsive Website"/>
+	-->
+
+	<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  	<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  	<%= csrf_meta_tags %>
+</head>
+
+<body class="boxed">
+
+	<div class="body">
+		
+		<%= render 'layouts/header' %>
+	
+			<div role="main" class="main">
+				<div id="content" class="content full">
+
+					<section class="page-top">
+						<div class="container">
+							<div class="row">
+								<div class="span12">
+									<ul class="breadcrumb">
+										<li><%= link_to "Inicio", inicio_path%></li>
+									</ul>
+								</div>
+							</div>
+							<div class="row">
+								<div class="span12">
+									<h2><%= titulo_completo(yield(:titulo))%></h2>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<%= yield %>
+
+					<%= render 'layouts/footer'%>
+				</div>
+			</div>
+
+
+	</div>
 
 </body>
 </html>

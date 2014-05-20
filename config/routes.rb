@@ -1,4 +1,14 @@
 H2cWebsite::Application.routes.draw do
+  root "paginas#inicio"
+
+  match '/inicio', to: 'paginas#inicio', via: 'get'
+  match '/servicios', to: 'paginas#servicios', via: 'get'
+  match '/portafolio', to: 'paginas#portfolio', via: 'get'
+  match '/somos', to: 'paginas#somos', via: 'get'
+  match '/contacto', to: 'paginas#contacto', via: 'get'
+
+  match '/prudential', to: 'paginas#prudential', via: 'get'
+  match '/metlife', to: 'paginas#metlife', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

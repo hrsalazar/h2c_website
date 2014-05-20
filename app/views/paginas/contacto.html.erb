@@ -1,0 +1,45 @@
+<%= provide(:titulo , 'Contacto')%>
+
+<div class="container">
+	<div class="row">
+		<div class="span12">
+
+			<div class="alert alert-success hidden" id="contactSuccess">
+				<strong>Gracias!</strong> Mensaje enviado exitosamente.
+			</div>
+
+			<div class="alert alert-error hidden" id="contactError">
+				<strong>Error!</strong> Hubo un error al enviar el mensaje.
+			</div>
+
+			<h2 class="short"><strong>Contáctanos</strong></h2>
+			<form action="" id="contactForm" type="post">
+				<div class="row controls">
+					<div class="span3 control-group">
+						<label>Su nombre *</label>
+						<input type="text" value="" maxlength="100" class="span3" name="name" id="name">
+					</div>
+					<div class="span3 control-group">
+						<label>Su correo electrónico *</label>
+						<input type="email" value="" maxlength="100" class="span3" name="email" id="email">
+					</div>
+					<div class="span6 control-group">
+						<label>Asunto</label>
+						<input type="text" value="" maxlength="100" class="span6" name="subject" id="subject">
+					</div>
+				</div>
+				<div class="row controls">
+					<div class="span12 control-group">
+						<label>Mensaje *</label>
+						<textarea maxlength="5000" rows="10" class="span12" name="message" id="message"></textarea>
+					</div>
+				</div>
+				<div class="btn-toolbar">
+					<input type="submit" value="Enviar Mensaje" class="btn btn-primary btn-large" data-loading-text="Cargando ...">
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+</div>
