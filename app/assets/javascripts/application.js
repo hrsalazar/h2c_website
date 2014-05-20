@@ -19,7 +19,7 @@
 //= require isotope/jquery.isotope.js
 //= require jquery.turbolinks
 // require turbolinks --- Not include to allow isotope to work
-//= require_tree .
+// require_tree .
 // Head Libs
 //=	require modernizr.js
 //= require revolution-slider/js/jquery.themepunch.plugins.js
