@@ -18,6 +18,7 @@
 //= require selectnav.js
 //= require isotope/jquery.isotope.js
 //= require jquery.turbolinks
+//= require bootstrap
 // require turbolinks --- Not include to allow isotope to work
 // require_tree .
 // Head Libs
